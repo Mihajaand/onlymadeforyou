@@ -149,6 +149,21 @@
         max-width: 320px;
         margin-top: -100px;
         z-index: 999999;
+        position: relative;
+        padding-top: 60px;
+      }
+
+      .profile-pic {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid #e91e63;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
       }
 
       .sparkles {
@@ -420,6 +435,7 @@
             <button class="close-card" onclick="closeCard()">✕</button>
             <div class="card-content">
               <div class="card-message">
+                <img src="profile.jpeg" alt="Profile" class="profile-pic" />
                 <p style="margin-bottom: 12px;">La distance m'empêche pas de t'apporter un gâteau yaourt-confiture, alors j'ai fait ce que je sais faire de mieux : j'ai codé ! 💻</p>
                 <p style="margin-bottom: 12px;">Voici ton gâteau version Minecraft (comme ton jeu préféré) avec ta chanson favorite en fond ! 🎵</p>
                 <p style="margin-bottom: 12px;">J'espère que ça te fera sourire ! ✨🎀</p>
